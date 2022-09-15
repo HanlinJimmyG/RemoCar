@@ -13,7 +13,7 @@ public class UDPThread implements Runnable{
     @Override
     public void run() {
         try {
-            Log.d(TAG, "UDPThread run: udp start");
+            Log.d(TAG, "UDPThread run: udp start: ");
 
             DatagramSocket ds = new DatagramSocket(8080);
             ByteBuffer buf = ByteBuffer.allocate(1024);

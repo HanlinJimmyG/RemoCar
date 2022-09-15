@@ -13,12 +13,12 @@ public class UDPThread implements Runnable{
     @Override
     public void run() {
         try {
-            Log.d(TAG, "UDPThread run: udp start: ");
+            Log.d(TAG, "UDPThread run: udp start:");
 
             DatagramSocket ds = new DatagramSocket(8080);
             ByteBuffer buf = ByteBuffer.allocate(1024);
             DatagramPacket dp = new DatagramPacket(buf.array(),buf.capacity());
-            Log.d(TAG, "UDPThread run: udp ready");
+            Log.d(TAG, "UDPThread run: udp ready ");
             for (;;){
                 ds.receive(dp);
                 Log.d(TAG, "UDPThread run: udp received");

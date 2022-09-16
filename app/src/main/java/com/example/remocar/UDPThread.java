@@ -21,7 +21,7 @@ public class UDPThread implements Runnable{
             Log.d(TAG, "UDPThread run: udp ready ");
             for (;;){
                 ds.receive(dp);
-                Log.d(TAG, "UDPThread run: udp received");
+                Log.d(TAG, "UDPThread run: udp received ");
                 String string = buf.array().toString();
                 Log.d(TAG, "run: mas: "+string);
             }
